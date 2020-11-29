@@ -88,23 +88,21 @@
    <button class="tablinks" onclick="openCity(this, 'result')">Результаты</button>
   </div>
   <div id="main" class="tabcontent">
+   <div class="param"><div><span>% жира</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>Доля внутр жира</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>ОТ 1</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>ОТ 2</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>ОБ 1</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>ОБ 2</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
-   <div class="param"><div><span>Лекарство / холестерин</span><div><input class="input" type="checkbox"></div></div></div>
    <div class="param"><div><span>Плечо</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
+   <div class="param"><div><span>Лекарство / холестерин</span><div><input class="input" type="checkbox"></div></div></div>
    <div class="param"><div><span>Вес</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
-   <div class="param"><div><span>Рак: отец</span><div><input class="input" type="checkbox"></div></div></div>
    <div class="param"><div><span>Выход на пенсию</span><div><input class="input" type="checkbox"></div></div></div>
-   <div class="param"><div><span>Инсульт: братья / сестры</span><div><input class="input" type="checkbox"></div></div></div>
+   <div class="param"><div><span>АГ: братья / сестры</span><div><input class="input" type="checkbox"></div></div></div>
+   <div class="param"><div><span>АГ: № братьев / сестер</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>Сахарный диабет</span><div><input class="input" type="checkbox"></div></div></div>
-   <div class="param"><div><span>Глюкоза</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>Лекарство / диабет</span><div><input class="input" type="checkbox"></div></div></div>
-   <div class="param"><div><span>Длительность сахарного диабета</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
-   <div class="param"><div><span>Голень</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
-   <div class="param"><div><span>Метаб возраст</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
+   <div class="param"><div><span>Глюкоза</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
   </div>
   <div id="obchData" class="tabcontent">
    <h3>Общие данные</h3><p></p>
@@ -132,6 +130,7 @@
    <div class="param"><div><span>Длительность хрон заболевания легких</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>Бронхиальная астма</span><div><input class="input" type="checkbox"></div></div></div>
    <div class="param"><div><span>Длительность бронхиальной астмы</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
+   <div class="param"><div><span>Длительность сахарного диабета</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>Туберкулез легких</span><div><input class="input" type="checkbox"></div></div></div>
    <div class="param"><div><span>Длительность туберкулеза легких</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>ВИЧ/СПИД</span><div><input class="input" type="checkbox"></div></div></div>
@@ -272,11 +271,10 @@
    <div class="param"><div><span>ИБС: № братьев / сестер</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>АГ: отец</span><div><input class="input" type="checkbox"></div></div></div>
    <div class="param"><div><span>АГ: мать</span><div><input class="input" type="checkbox"></div></div></div>
-   <div class="param"><div><span>АГ: братья / сестры</span><div><input class="input" type="checkbox"></div></div></div>
-   <div class="param"><div><span>АГ: № братьев / сестер</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>Инсульт: отец</span><div><input class="input" type="checkbox"></div></div></div>
    <div class="param"><div><span>Инсульт: мать</span><div><input class="input" type="checkbox"></div></div></div>
    <div class="param"><div><span>Инсульт: № братьев / сестер</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
+   <div class="param"><div><span>Рак: отец</span><div><input class="input" type="checkbox"></div></div></div>
    <div class="param"><div><span>Рак: отец, участок</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>Рак: мать</span><div><input class="input" type="checkbox"></div></div></div>
    <div class="param"><div><span>Рак: мать, участок</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
@@ -293,6 +291,7 @@
    <div class="param"><div><span>ЧСС 1</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>ЧСС 2</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>Рост</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
+   <div class="param"><div><span>Голень</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>Голова</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>Сила левая1</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>Сила левая2</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
@@ -314,7 +313,6 @@
    <div class="param"><div><span>Калий</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>Креатинин</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>Полный вес тела</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
-   <div class="param"><div><span>% жира</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>% воды</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>Мышечная масса</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>Физ состояние</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
@@ -345,6 +343,7 @@
    <div class="param"><div><span>Инверсия T / перед-лат</span><div><input class="input" type="checkbox"></div></div></div>
    <div class="param"><div><span>Инверсия T / задний</span><div><input class="input" type="checkbox"></div></div></div>
    <div class="param"><div><span>Инверсия T / нет</span><div><input class="input" type="checkbox"></div></div></div>
+   <div class="param"><div><span>Метаб возраст</span><div><input class="input" min=0 type="number" step="any"></div></div></div>
    <div class="param"><div><span>R>S</span><div><input class="input" type="checkbox"></div></div></div>
    <div class="param"><div><span>Гипертрофия ЛЖ</span><div><input class="input" type="checkbox"></div></div></div>
    <div class="param"><div><span>Вольтажные критерии</span><div><input class="input" type="checkbox"></div></div></div>
@@ -1017,8 +1016,8 @@
    }
 
    function createP(pacData) {
-    let teta0 = -7.10368;
-    tetai = [0.09314, 0.017359, 0.023105, 0.02251, 0.010613, 1.465361, 0.049963, -0.036379, 0.45366, 0.461308, 0.589999, 1.611969, 0.10125, -1.04482, -0.013066, -0.047764, 0.009522]
+    let teta0 = -5.96004;
+    tetai = [0.042582, 0.09258, -0.008849, 0.04274, -0.011227, 0.017051, 0.028239, 1.440504, -0.030445, 0.375984, 0.171005, 0.38634, 1.534762, -1.08081, 0.099457]
     let sum = 0;
     for (let i = 0; i < tetai.length; i++) {
       sum += tetai[i] * pacData[i]
