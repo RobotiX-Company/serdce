@@ -1023,7 +1023,7 @@
       sum += tetai[i] * pacData[i]
     }
     let y = teta0 + sum;
-    return Math.exp(y) / (1 + Math.exp(y));
+    return (Math.exp(y) / (1 + Math.exp(y))).toFixed(2);
    }
   </script>
  </body>
